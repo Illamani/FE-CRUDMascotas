@@ -1,9 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatTableDataSource } from '@angular/material/table';
 import { Mascota } from 'src/app/interfaces/mascotas';
 
 
 
-const ELEMENT_DATA: Mascota[] = [
+const listMascotas: Mascota[] = [
   {nombre:'Ciro',color:'Dorado',edad:42,raza:'Golden',peso:25},
   {nombre:'Miro',color:'Dorado',edad:44,raza:'Golden',peso:13},
   {nombre:'Milton',color:'Blanco',edad:54,raza:'Pitbull',peso:23},
@@ -18,12 +20,17 @@ const ELEMENT_DATA: Mascota[] = [
   templateUrl: './listado-mascota.component.html',
   styleUrls: ['./listado-mascota.component.css']
 })
-export class ListadoMascotaComponent implements OnInit {
+export class ListadoMascotaComponent implements OnInit,AfterViewInit  {
   displayedColumns: string[] = ['nombre', 'color', 'edad','raza','peso'];
-  dataSource = ELEMENT_DATA;
+  dataSource = new MatTableDataSource<Mascota>(listMascotas);
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
   constructor() { }
 
   ngOnInit(): void {
+  }
+  ngAfterViewInit(): void {
+    this.dataSource.paginator = this.paginator;
+    this.paginator._intl.itemsPerPageLabel = 'Items por pagina'
   }
 
 }
