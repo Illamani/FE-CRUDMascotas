@@ -10,6 +10,9 @@ import { ListadoMascotaComponent } from './components/listado-mascota/listado-ma
 import { VerMascotaComponent } from './components/ver-mascota/ver-mascota.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 //Angular Material
 import {MatTableModule} from '@angular/material/table';
@@ -26,7 +29,10 @@ import {MatTableModule} from '@angular/material/table';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatSortModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
