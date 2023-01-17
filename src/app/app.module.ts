@@ -3,30 +3,27 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-//Componentes
+import { SpinnerComponent } from './shared/spinner/spinner.component';
+//Modulos
 import { AgregarEditarMascotaComponent } from './components/agregar-editar-mascota/agregar-editar-mascota.component';
 import { ListadoMascotaComponent } from './components/listado-mascota/listado-mascota.component';
 import { VerMascotaComponent } from './components/ver-mascota/ver-mascota.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatPaginatorModule} from '@angular/material/paginator';
+import { SharedModule } from './shared/shared.module';
 
-//Angular Material
-import {MatTableModule} from '@angular/material/table';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     AgregarEditarMascotaComponent,
     ListadoMascotaComponent,
-    VerMascotaComponent
+    VerMascotaComponent,
+    SpinnerComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    MatTableModule,
-    MatPaginatorModule
+    SharedModule    
   ],
   providers: [],
   bootstrap: [AppComponent]
