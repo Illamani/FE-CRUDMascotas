@@ -43,5 +43,41 @@ namespace BE_CRUDMascotas.Controllers
         return BadRequest($"{ex.Message}");
       }
     }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete(int id)
+    {
+      try
+      {
+        var mascota = await _context.Mascotas.FindAsync(id);
+        if (mascota == null)
+        {
+          return NotFound();
+        }
+        _context.Mascotas.Remove(mascota);
+        await _context.SaveChangesAsync();
+        return NoContent();
+      }
+      catch (Exception ex)
+      {
+        return BadRequest(ex.Message);
+      }
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Post(Mascotas mascotas)
+    {
+      try
+      {
+        mascotas.FechaCreacion = DateTime.Now;
+        _context.Add(mascotas);
+        await _context.SaveChangesAsync();
+        return CreatedAtAction("Get",new {id = mascotas.Id},mascotas);
+      }
+      catch (Exception ex)
+      {
+        return BadRequest(ex.Message);
+      }
+    }
   }
 }
