@@ -117,3 +117,9 @@ C:\Users\PC\Desktop\Proyectos\AngularDotNetProject\FE-CRUDMascotas\BE-CRUDMascot
 C:\Users\PC\Desktop\Proyectos\AngularDotNetProject\FE-CRUDMascotas\BE-CRUDMascotas\BE-CRUDMascotas\obj\Debug\net6.0\BE-CRUDMascotas.pdb
 C:\Users\PC\Desktop\Proyectos\AngularDotNetProject\FE-CRUDMascotas\BE-CRUDMascotas\BE-CRUDMascotas\obj\Debug\net6.0\BE-CRUDMascotas.genruntimeconfig.cache
 C:\Users\PC\Desktop\Proyectos\AngularDotNetProject\FE-CRUDMascotas\BE-CRUDMascotas\BE-CRUDMascotas\obj\Debug\net6.0\ref\BE-CRUDMascotas.dll
+C:\Users\PC\Desktop\Proyectos\AngularDotNetProject\FE-CRUDMascotas\BE-CRUDMascotas\BE-CRUDMascotas\bin\Debug\net6.0\System.Web.Cors.dll
+C:\Users\PC\Desktop\Proyectos\AngularDotNetProject\FE-CRUDMascotas\BE-CRUDMascotas\BE-CRUDMascotas\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\PC\Desktop\Proyectos\AngularDotNetProject\FE-CRUDMascotas\BE-CRUDMascotas\BE-CRUDMascotas\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\PC\Desktop\Proyectos\AngularDotNetProject\FE-CRUDMascotas\BE-CRUDMascotas\BE-CRUDMascotas\bin\Debug\net6.0\System.Web.Http.Cors.dll
+C:\Users\PC\Desktop\Proyectos\AngularDotNetProject\FE-CRUDMascotas\BE-CRUDMascotas\BE-CRUDMascotas\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\PC\Desktop\Proyectos\AngularDotNetProject\FE-CRUDMascotas\BE-CRUDMascotas\BE-CRUDMascotas\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
