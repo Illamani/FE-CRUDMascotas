@@ -3729,11 +3729,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Desktop\\Proyectos\\AngularDotNetProject\\BE-CRUDMascotas\\BE-CRUDMascotas\\BE-CRUDMascotas.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Desktop\\Proyectos\\AngularDotNetProject\\FE-CRUDMascotas\\BE-CRUDMascotas\\BE-CRUDMascotas\\BE-CRUDMascotas.csproj",
       "projectName": "BE-CRUDMascotas",
-      "projectPath": "C:\\Users\\PC\\Desktop\\Proyectos\\AngularDotNetProject\\BE-CRUDMascotas\\BE-CRUDMascotas\\BE-CRUDMascotas.csproj",
+      "projectPath": "C:\\Users\\PC\\Desktop\\Proyectos\\AngularDotNetProject\\FE-CRUDMascotas\\BE-CRUDMascotas\\BE-CRUDMascotas\\BE-CRUDMascotas.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Desktop\\Proyectos\\AngularDotNetProject\\BE-CRUDMascotas\\BE-CRUDMascotas\\obj\\",
+      "outputPath": "C:\\Users\\PC\\Desktop\\Proyectos\\AngularDotNetProject\\FE-CRUDMascotas\\BE-CRUDMascotas\\BE-CRUDMascotas\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

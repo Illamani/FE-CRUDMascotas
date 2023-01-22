@@ -1,3 +1,6 @@
+using BE_CRUDMascotas.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +9,11 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+var conecction = builder.Configuration.GetConnectionString("Conexion");
+builder.Services.AddDbContext<AplicationDbContext>(options =>
+{
+  options.UseSqlServer(conecction);
+});
 
 var app = builder.Build();
 

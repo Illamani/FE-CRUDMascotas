@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FVptgnwhbbcNld8mDnjBVpcmMyuUu3MBab4c7/QrO2NA9XVMdvtYi/PVXnyRdeOZ0dQws0JLsUw6fxnMbHI+JQ==",
+  "dgSpecHash": "XXRs3nEvn4NLFnfJmRMHY5xGtC8yU1Lx7B0yUmVbJMsUfCUZyJY2+0DWFLu17JkMKF3cayvRmSq81Hix8iv5SA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\Desktop\\Proyectos\\AngularDotNetProject\\BE-CRUDMascotas\\BE-CRUDMascotas\\BE-CRUDMascotas.csproj",
+  "projectFilePath": "C:\\Users\\PC\\Desktop\\Proyectos\\AngularDotNetProject\\FE-CRUDMascotas\\BE-CRUDMascotas\\BE-CRUDMascotas\\BE-CRUDMascotas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
