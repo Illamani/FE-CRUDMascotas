@@ -72,9 +72,37 @@ namespace BE_CRUDMascotas.Controllers
         mascotas.FechaCreacion = DateTime.Now;
         _context.Add(mascotas);
         await _context.SaveChangesAsync();
-        return CreatedAtAction("Get",new {id = mascotas.Id},mascotas);
+        return CreatedAtAction("Get", new { id = mascotas.Id }, mascotas);
       }
       catch (Exception ex)
+      {
+        return BadRequest(ex.Message);
+      }
+    }
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Put(int id, Mascotas mascotas)
+    {
+      try
+      {
+        if(id != mascotas.Id)
+        {
+          return BadRequest();
+        }
+        var mascotaItems = await _context.Mascotas.FindAsync(id);
+        if(mascotaItems== null)
+        {
+          return NotFound();
+        }
+        mascotaItems.Nombre = mascotas.Nombre;
+        mascotaItems.Raza = mascotas.Raza;
+        mascotaItems.Edad = mascotas.Edad;
+        mascotaItems.Peso= mascotas.Peso;
+        mascotaItems.Color = mascotas.Color;
+        await _context.SaveChangesAsync();
+        return NoContent();
+      }
+      catch(Exception ex)
       {
         return BadRequest(ex.Message);
       }
