@@ -40,9 +40,9 @@
                 <button routerLink="/agregarMascota" class="agregar" mat-raised-button color="primary">Aceptar</button>
             </th>
             <td mat-cell *matCellDef="let element">
-                <mat-icon (click)="eliminarMascota()"  class = "delete" fontIcon="delete" matTooltip="Eliminar">X</mat-icon>
-                <mat-icon routerLink="/verMascota/1" class="search" fontIcon ="search" matTooltip="Ver">S</mat-icon>
-                <mat-icon routerLink="/editarMascota/1" class ="edit" fontIcon="edit" matTooltip="Editar">E</mat-icon>
+                <mat-icon (click)="eliminarMascota(element.id)"  class = "delete" fontIcon="delete" matTooltip="Eliminar">X</mat-icon>
+                <mat-icon routerLink="/verMascota/{{element.id}}" class="search" fontIcon ="search" matTooltip="Ver">S</mat-icon>
+                <mat-icon routerLink="/editarMascota/{{element.id}}" class ="edit" fontIcon="edit" matTooltip="Editar">E</mat-icon>
             </td>
         </ng-container>
 
