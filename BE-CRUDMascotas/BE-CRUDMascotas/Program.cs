@@ -13,6 +13,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddCors(options => options.AddPolicy("AllowWebApp",
                         builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()));
 
+builder.Services.AddAutoMapper(typeof(Program));
+
 var conecction = builder.Configuration.GetConnectionString("Conexion");
 builder.Services.AddDbContext<AplicationDbContext>(options =>
 {
